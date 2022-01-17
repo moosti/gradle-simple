@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
   implementation 'com.google.guava:guava:29.0-jre'
+  implementation 'com.android.support:appcompat-v7:25.0.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -42,9 +43,4 @@ install {
       }
     }
   }
-}
-
-wrapper {
-    gradleVersion = "6.1.1"
-    distributionType = Wrapper.DistributionType.ALL
 }
